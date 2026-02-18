@@ -12,10 +12,11 @@ export function Header() {
 
   return (
     <header className="absolute top-0 left-0 w-full z-50 text-white">
-      <div className="container mx-auto flex h-16 items-center justify-between px-4">
+      <div className="container mt-4 mx-auto flex h-16 items-center justify-between px-4">
         {/* Left side - Logo */}
         <Link href="/" className="flex items-center gap-2 text-2xl font-bold">
           <Image
+            className="rounded-full p-3.5 ml-5 "
             src="/images/site-logo-white.svg"
             alt="Charity Logo"
             width={160}
@@ -58,8 +59,11 @@ export function Header() {
           </Link>
         </nav>
 
-        <div className="hidden md:block">
-          <Button variant={'secondary'} className="">
+        <div className="hidden md:block pt-3">
+          <Button
+            variant={'secondary'}
+            className="px-8 py-6 h-1 rounded-xl border-[#1f2b0a] text-[#1f2b0a] hover:bg-[#8bce17] hover:text-white"
+          >
             Donate Now
           </Button>
         </div>

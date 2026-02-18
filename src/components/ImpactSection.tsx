@@ -1,3 +1,4 @@
+import { Button } from './ui/button';
 import Counter from './Counter';
 
 export default function ImpactSection() {
@@ -68,9 +69,12 @@ export default function ImpactSection() {
             </p>
           </div>
 
-          <button className="bg-white text-black px-6 py-3 rounded-md font-semibold mt-6 md:mt-0">
+          <Button
+            variant="default"
+            className="bg-white text-black px-6 py-3 rounded-md font-semibold mt-6 md:mt-0"
+          >
             Donate Now
-          </button>
+          </Button>
         </div>
       </div>
     </section>

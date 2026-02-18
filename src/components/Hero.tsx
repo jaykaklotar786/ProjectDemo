@@ -26,7 +26,10 @@ export default function Hero() {
           us in making a difference lives together.
         </p>
 
-        <Button variant="default" className="">
+        <Button
+          variant="default"
+          className="bg-[#68961a] hover:bg-[#5a860e] text-white"
+        >
           Donate Now
         </Button>
       </div>

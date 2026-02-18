@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { Button } from '@/components/ui/button';
 
 export default function AboutSection() {
   return (
@@ -28,9 +29,12 @@ export default function AboutSection() {
               the world.
             </p>
 
-            <button className="border border-gray-400 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+            <Button
+              variant="outline"
+              className="px-8 py-6 rounded-xl border-[#1f2b0a] text-[#1f2b0a] hover:bg-[#1f2b0a] hover:text-white"
+            >
               Read More
-            </button>
+            </Button>
           </div>
 
           {/* Right Images */}
