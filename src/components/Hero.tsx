@@ -3,35 +3,24 @@ import { Button } from '@/components/ui/button';
 
 export default function Hero() {
   return (
-    <section className="relative h-screen w-full">
-      {/* Background Image */}
-      <Image
-        src="/Images/home-bg.jpg"
-        alt="charity hero"
-        fill
-        priority
-        className="object-cover"
-      />
+    <section className="relative min-h-screen w-auto flex items-center">
+      <div className="absolute inset-0">
+        <img src="/Images/home-bg.jpg" className="w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-black/50"></div>
+      </div>
 
-      {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/60"></div>
-
-      {/* Center Content */}
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
-        <h1 className="text-4xl md:text-6xl font-bold mb-6">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
           Empowering Change, One Step at a Time
         </h1>
-        <p className="text-lg mb-4 opacity-80">
-          Every small act of kindness creates a ripple of positive change. Join
-          us in making a difference lives together.
+
+        <p className="mt-6 text-base sm:text-lg md:text-xl max-w-3xl mx-auto">
+          Every small act of kindness creates a ripple of positive change.
         </p>
 
-        <Button
-          variant="default"
-          className="bg-[#68961a] hover:bg-[#5a860e] text-white mt-1"
-        >
+        <button className="mt-8 bg-green-600 hover:bg-green-700 px-6 py-3 rounded-lg font-semibold">
           Donate Now
-        </Button>
+        </button>
       </div>
     </section>
   );
