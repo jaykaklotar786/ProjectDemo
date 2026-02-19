@@ -21,14 +21,14 @@ export default function Hero() {
         <h1 className="text-4xl md:text-6xl font-bold mb-6">
           Empowering Change, One Step at a Time
         </h1>
-        <p className="text-sm mb-4 opacity-80">
+        <p className="text-lg mb-4 opacity-80">
           Every small act of kindness creates a ripple of positive change. Join
           us in making a difference lives together.
         </p>
 
         <Button
           variant="default"
-          className="bg-[#68961a] hover:bg-[#5a860e] text-white"
+          className="bg-[#68961a] hover:bg-[#5a860e] text-white mt-1"
         >
           Donate Now
         </Button>

@@ -1,9 +1,14 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
+import FeatureCards from './FeatureCards';
 
 export default function AboutSection() {
   return (
-    <section className="bg-[#f4f4ef] py-20">
+    <section className="bg-[#f4f4ef] py-20 flex flex-col gap-24">
+      <div className="relative -mt-44 z-20">
+        <FeatureCards />
+      </div>
+
       <div className="max-w-6xl mx-auto px-6">
         {/* Bottom Section */}
         <div className="grid md:grid-cols-2 gap-16 items-center">

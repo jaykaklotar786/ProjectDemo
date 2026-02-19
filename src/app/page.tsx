@@ -5,19 +5,19 @@ import FeatureCards from '@/components/FeatureCards';
 import ImpactSection from '@/components/ImpactSection';
 import GetInvolvedSection from '@/components/GetInvolvedSection';
 import StoriesSection from '@/components/StoriesSection';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
     <>
       <Header />
       <Hero />
-      <div className="relative -mt-24 z-20">
-        <FeatureCards />
-      </div>
+
       <AboutSection />
       <ImpactSection />
       <GetInvolvedSection />
       <StoriesSection />
+      <Footer />
     </>
   );
 }
