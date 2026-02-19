@@ -12,7 +12,7 @@ export default function ImpactSection() {
               Our Impact
             </p>
 
-            <h2 className="text-4xl md:text-5xl font-bold text-[#1f2b0a] leading-tight">
+            <h2 className="text-5xl md:text-5xl font-bold text-[#1f2b0a] leading-tight">
               The impact we have made in our community
             </h2>
           </div>
@@ -27,8 +27,8 @@ export default function ImpactSection() {
         {/* Stats Row */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center mt-20 border-t pt-12">
           <div>
-            <h3 className="text-4xl font-bold text-[#1f2b0a]">
-              <Counter target={200000} />
+            <h3 className="text-5xl font-bold text-[#1f2b0a]">
+              <Counter target={20000000} format="million" plus />
             </h3>
             <p className="text-gray-600 mt-2 text-sm">
               People served worldwide
@@ -36,21 +36,21 @@ export default function ImpactSection() {
           </div>
 
           <div className="md:border-l">
-            <h3 className="text-4xl font-bold text-[#1f2b0a]">
+            <h3 className="text-5xl font-bold text-[#1f2b0a]">
               <Counter target={142790} />
             </h3>
             <p className="text-gray-600 mt-2 text-sm">Projects funded</p>
           </div>
 
           <div className="md:border-l">
-            <h3 className="text-4xl font-bold text-[#1f2b0a]">
-              <Counter target={1800000} />
+            <h3 className="text-5xl font-bold text-[#1f2b0a]">
+              <Counter target={1800000} format="million" />
             </h3>
             <p className="text-gray-600 mt-2 text-sm">People to take action</p>
           </div>
 
           <div className="md:border-l">
-            <h3 className="text-4xl font-bold text-[#1f2b0a]">
+            <h3 className="text-5xl font-bold text-[#1f2b0a]">
               <Counter target={5246} />
             </h3>
             <p className="text-gray-600 mt-2 text-sm">Partner organizations</p>

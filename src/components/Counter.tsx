@@ -5,9 +5,16 @@ import { useEffect, useState } from 'react';
 interface CounterProps {
   target: number;
   duration?: number;
+  format?: 'number' | 'million';
+  plus?: boolean;
 }
 
-export default function Counter({ target, duration = 2000 }: CounterProps) {
+export default function Counter({
+  target,
+  duration = 2000,
+  format = 'number',
+  plus = false,
+}: CounterProps) {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
@@ -27,5 +34,16 @@ export default function Counter({ target, duration = 2000 }: CounterProps) {
     return () => clearInterval(counter);
   }, [target, duration]);
 
-  return <span>{count.toLocaleString()}</span>;
+  // 👇 Formatting logic
+  const formatNumber = () => {
+    if (format === 'million') {
+      return (
+        (count / 1000000).toFixed(1).replace('.0', '') + 'M' + (plus ? '+' : '')
+      );
+    }
+
+    return count.toLocaleString();
+  };
+
+  return <span>{formatNumber()}</span>;
 }
