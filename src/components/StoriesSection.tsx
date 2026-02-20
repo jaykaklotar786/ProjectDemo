@@ -16,7 +16,7 @@ export default function StoriesSection() {
           </p>
         </div>
 
-        {/* Main Combined Card */}
+        {/* Combined Card */}
         <div className="bg-[#f6f7f2] border border-[#cfd5bf] rounded-3xl p-6 sm:p-8 md:p-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12">
             {/* LEFT */}

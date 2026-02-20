@@ -1,5 +1,4 @@
-// components/header.tsx
-'use client'; // Mobile menu ke liye client component chahiye
+'use client';
 
 import Link from 'next/link';
 import Image from 'next/image';
@@ -12,7 +11,7 @@ export function Header() {
 
   return (
     <header className="absolute top-0 left-0 w-full z-50 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8  flex h-16 items-center justify-between ">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8  flex h-16 items-center justify-between">
         {/* Left side - Logo */}
         <Link href="/" className="flex items-center gap-2 text-2xl font-bold">
           <Image
@@ -26,7 +25,7 @@ export function Header() {
         </Link>
 
         {/* Desktop Navigation - Center */}
-        <nav className="hidden md:flex items-center space-x-8">
+        <nav className="hidden md:flex items-center space-x-6">
           <Link
             href="/"
             className="text-sm font-medium hover:text-primary transition-colors"
@@ -60,10 +59,7 @@ export function Header() {
         </nav>
 
         <div className="hidden md:block pt-3">
-          <Button
-            variant={'secondary'}
-            className="px-8 py-6 h-1 rounded-xl border-[#1f2b0a] text-[#1f2b0a] hover:bg-[#8bce17] hover:text-white"
-          >
+          <Button variant={'secondary'} className="">
             Donate Now
           </Button>
         </div>

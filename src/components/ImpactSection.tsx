@@ -24,7 +24,6 @@ export default function ImpactSection() {
           </p>
         </div>
 
-        {/* Stats Row */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 text-center mt-16 md:mt-20 border-t pt-10 md:pt-12">
           <div>
             <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1f2b0a]">
@@ -57,7 +56,7 @@ export default function ImpactSection() {
           </div>
         </div>
 
-        {/* Green CTA Box */}
+        {/* Green  Box */}
         <div className="bg-green-600 rounded-2xl mt-16 md:mt-20 p-6 sm:p-8 md:p-10 flex flex-col md:flex-row justify-between items-start md:items-center text-white gap-6">
           <div>
             <h3 className="text-2xl sm:text-3xl font-bold">
