@@ -1,26 +1,38 @@
 import Image from 'next/image';
-import { Button } from '@/components/ui/button';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen w-auto flex items-center">
-      <div className="absolute inset-0">
-        <img src="/Images/home-bg.jpg" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-black/50"></div>
+    <section className="relative w-full min-h-[90vh] flex items-center justify-center overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0 -z-10">
+        <Image
+          src="/Images/home-bg.jpg"
+          alt="Hero Background"
+          fill
+          priority
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-black/60"></div>
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-          Empowering Change, One Step at a Time
+      {/* Content */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
+          Empowering Change,
+          <br className="hidden sm:block" />
+          One Step at a Time
         </h1>
 
         <p className="mt-6 text-base sm:text-lg md:text-xl max-w-3xl mx-auto">
-          Every small act of kindness creates a ripple of positive change.
+          Every small act of kindness creates a ripple of positive change. Join
+          us in making a difference lives together.
         </p>
 
-        <button className="mt-8 bg-green-600 hover:bg-green-700 px-6 py-3 rounded-lg font-semibold">
-          Donate Now
-        </button>
+        <div className="mt-8">
+          <button className="bg-green-600 hover:bg-green-700 transition duration-300 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-sm sm:text-base">
+            Donate Now
+          </button>
+        </div>
       </div>
     </section>
   );

@@ -12,7 +12,7 @@ export function Header() {
 
   return (
     <header className="absolute top-0 left-0 w-full z-50 text-white">
-      <div className="container mt-4 mx-auto flex h-16 items-center justify-between px-4">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8  flex h-16 items-center justify-between ">
         {/* Left side - Logo */}
         <Link href="/" className="flex items-center gap-2 text-2xl font-bold">
           <Image

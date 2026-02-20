@@ -6,12 +6,13 @@ export default function GetInvolvedSection() {
     <section className="bg-[#f4f4ef] py-24">
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
         {/* Left Image */}
-        <div className="relative w-full h-[500px] rounded-2xl overflow-hidden">
+        <div className="relative w-full h-64 sm:h-80 md:h-96 lg:h-[500px] rounded-2xl overflow-hidden">
           <Image
             src="/Images/home-05.jpg"
             alt="Volunteers holding aid boxes"
             fill
             className="object-cover"
+            sizes="(max-width: 768px) 100vw, 1200px"
           />
         </div>
 
