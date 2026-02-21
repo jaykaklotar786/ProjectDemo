@@ -1,22 +1,18 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { DM_Sans, Geist, Inter } from 'next/font/google';
 import './globals.css';
 
-import { Inter } from 'next/font/google';
 import './globals.css';
+import { cn } from '@/lib/utils';
 
-const inter = Inter({
+const dmSans = DM_Sans({
   subsets: ['latin'],
-  variable: '--font-inter',
+  variable: '--font-dm-sans',
+  fallback: ['sans-serif'],
 });
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin'],
-});
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
+const sansSarif = Inter({
+  variable: '--font-sans-sarif',
   subsets: ['latin'],
 });
 
@@ -32,7 +28,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="overflow-x-hidden">{children}</body>
+      <body
+        className={cn(
+          `${dmSans.variable} ${sansSarif.variable} relative`,
+          'overflow-x-hidden',
+        )}
+      >
+        {children}
+      </body>
     </html>
   );
 }

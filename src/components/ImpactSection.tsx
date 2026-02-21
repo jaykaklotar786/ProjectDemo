@@ -70,7 +70,7 @@ export default function ImpactSection() {
 
           <Button
             variant="default"
-            className="bg-white text-black px-6 py-3 rounded-md font-semibold w-full sm:w-auto"
+            className="bg-white hover:bg-green-900 text-black px-6 py-3 rounded-md font-semibold w-full sm:w-auto"
           >
             Donate Now
           </Button>

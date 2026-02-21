@@ -10,16 +10,16 @@ export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="absolute top-0 left-0 w-full z-50 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8  flex h-16 items-center justify-between">
+    <header className="absolute h-25 top-0 flex items-center  left-0 w-full z-50 text-white">
+      <div className="max-w-310 h-full mx-auto w-full flex px-5  items-center justify-between">
         {/* Left side - Logo */}
         <Link href="/" className="flex items-center gap-2 text-2xl font-bold">
           <Image
-            className="rounded-full p-3.5 ml-5 "
+            className="rounded-full "
             src="/images/site-logo-white.svg"
             alt="Charity Logo"
-            width={160}
-            height={50}
+            width={150}
+            height={38}
             priority
           />
         </Link>
