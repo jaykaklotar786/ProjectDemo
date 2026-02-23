@@ -10,60 +10,61 @@ export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="absolute h-25 top-0 flex items-center  left-0 w-full z-50 text-white">
-      <div className="max-w-310 h-full mx-auto w-full flex px-5  items-center justify-between">
-        {/* Left side - Logo */}
-        <Link href="/" className="flex items-center gap-2 text-2xl font-bold">
+    <header className="absolute top-0 left-0 w-full h-25 z-50 text-white">
+      <div className="max-w-310 mx-auto px-5 h-full flex items-center justify-between">
+        {/* Logo */}
+        <Link href="/" className="flex items-center">
           <Image
-            className="rounded-full "
             src="/images/site-logo-white.svg"
             alt="Charity Logo"
             width={150}
             height={38}
-            priority
+            className="h-9.5 w-37.5"
           />
         </Link>
 
-        {/* Desktop Navigation - Center */}
-        <nav className="hidden md:flex items-center space-x-6">
+        {/* Desktop Menu */}
+        <nav className="hidden md:flex items-center font-semibold h-full">
           <Link
             href="/"
-            className="text-sm font-medium hover:text-primary transition-colors"
+            className="px-4 h-full flex items-center duration-300 hover:text-[#7FBF2F]"
           >
             Home
           </Link>
           <Link
             href="/about"
-            className="text-sm font-medium hover:text-primary transition-colors"
+            className="px-4 h-full flex items-center duration-300 hover:text-[#7FBF2F]"
           >
-            About us
+            About Us
           </Link>
           <Link
             href="/causes"
-            className="text-sm font-medium hover:text-primary transition-colors"
+            className="px-4 h-full flex items-center duration-300 hover:text-[#7FBF2F]"
           >
             Our Work
           </Link>
           <Link
-            href="/contact"
-            className="text-sm font-medium hover:text-primary transition-colors"
+            href="/stories"
+            className="px-4 h-full flex items-center duration-300 hover:text-[#7FBF2F]"
           >
             Stories
           </Link>
           <Link
             href="/contact"
-            className="text-sm font-medium hover:text-primary transition-colors"
+            className="px-4 h-full flex items-center duration-300 hover:text-[#7FBF2F]"
           >
-            contact
+            Contact
           </Link>
         </nav>
 
-        <div className="hidden md:block pt-3">
-          <Button variant={'secondary'} className="">
-            Donate Now
+        {/* Desktop Button */}
+        <div className="hidden md:flex items-center">
+          <Button className="bg-white text-[#2C3A04] text-[18px] px-6 py-4.5 rounded-b-sm  font-semibold transition-all duration-300 hover:bg-[#7FBF2F] hover:text-[#2C3A04] w-[111.66px] h-13.5">
+            Donate
           </Button>
         </div>
 
+        {/* Mobile Menu Button */}
         <button
           className="md:hidden"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -72,47 +73,26 @@ export function Header() {
         </button>
       </div>
 
+      {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden border-t bg-white p-4">
-          <nav className="flex flex-col space-y-4">
-            <Link
-              href="/"
-              className="text-sm font-medium py-2 hover:text-primary transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
+        <div className="md:hidden bg-white text-black px-5 py-6">
+          <nav className="flex flex-col space-y-4 font-semibold">
+            <Link href="/" onClick={() => setIsMenuOpen(false)}>
               Home
             </Link>
-            <Link
-              href="/about"
-              className="text-sm font-medium py-2 hover:text-primary transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
+            <Link href="/about" onClick={() => setIsMenuOpen(false)}>
               About Us
             </Link>
-            <Link
-              href="/causes"
-              className="text-sm font-medium py-2 hover:text-primary transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
+            <Link href="/causes" onClick={() => setIsMenuOpen(false)}>
               Our Work
             </Link>
-            <Link
-              href="/contact"
-              className="text-sm font-medium py-2 hover:text-primary transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
+            <Link href="/stories" onClick={() => setIsMenuOpen(false)}>
               Stories
             </Link>
-            <Link
-              href="/contact"
-              className="text-sm font-medium py-2 hover:text-primary transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
+            <Link href="/contact" onClick={() => setIsMenuOpen(false)}>
               Contact
             </Link>
-            <Button variant={'secondary'} className="">
-              Donate Now
-            </Button>
+            <Button>Donate</Button>
           </nav>
         </div>
       )}
