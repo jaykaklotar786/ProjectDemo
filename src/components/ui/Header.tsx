@@ -27,31 +27,31 @@ export function Header() {
         <nav className="hidden md:flex items-center font-semibold h-full">
           <Link
             href="/"
-            className="px-4 h-full flex items-center duration-300 hover:text-[#7FBF2F]"
+            className="px-4 h-full w-[77.88px] flex items-center duration-300 hover:text-[#7FBF2F]"
           >
             Home
           </Link>
           <Link
             href="/about"
-            className="px-4 h-full flex items-center duration-300 hover:text-[#7FBF2F]"
+            className="px-4 h-full w-[103.58px] flex items-center duration-300 hover:text-[#7FBF2F]"
           >
             About Us
           </Link>
           <Link
             href="/causes"
-            className="px-4 h-full flex items-center duration-300 hover:text-[#7FBF2F]"
+            className="px-4 h-full w-[105.69px] flex items-center duration-300 hover:text-[#7FBF2F]"
           >
             Our Work
           </Link>
           <Link
             href="/stories"
-            className="px-4 h-full flex items-center duration-300 hover:text-[#7FBF2F]"
+            className="px-4 h-full w-[82.2px] flex items-center duration-300 hover:text-[#7FBF2F]"
           >
             Stories
           </Link>
           <Link
             href="/contact"
-            className="px-4 h-full flex items-center duration-300 hover:text-[#7FBF2F]"
+            className="px-4 h-full w-[96.11px] flex items-center duration-300 hover:text-[#7FBF2F]"
           >
             Contact
           </Link>
