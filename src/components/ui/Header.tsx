@@ -24,7 +24,7 @@ export function Header() {
         </Link>
 
         {/* Desktop Menu */}
-        <nav className="hidden md:flex items-center font-semibold h-full">
+        <nav className="hidden md:flex mr-9 items-center font-semibold h-full">
           <Link
             href="/"
             className="px-4 h-full w-[77.88px] flex items-center duration-300 hover:text-[#7FBF2F]"
@@ -45,13 +45,13 @@ export function Header() {
           </Link>
           <Link
             href="/stories"
-            className="px-4 h-full w-[82.2px] flex items-center duration-300 hover:text-[#7FBF2F]"
+            className="px-4 h-full w-[87.2px] flex items-center duration-300 hover:text-[#7FBF2F]"
           >
             Stories
           </Link>
           <Link
             href="/contact"
-            className="px-4 h-full w-[96.11px] flex items-center duration-300 hover:text-[#7FBF2F]"
+            className="px-4 h-full w-[96.3px] flex items-center duration-300 hover:text-[#7FBF2F]"
           >
             Contact
           </Link>
@@ -92,7 +92,6 @@ export function Header() {
             <Link href="/contact" onClick={() => setIsMenuOpen(false)}>
               Contact
             </Link>
-            <Button>Donate</Button>
           </nav>
         </div>
       )}
