@@ -4,12 +4,12 @@ import FeatureCards from './FeatureCards';
 
 export default function AboutSection() {
   return (
-    <section className=" bg-[#F7F9F4] py-20 flex flex-col gap-24">
+    <section className=" bg-[#F7F9F4] py-20 flex flex-col gap-10">
       <div className="relative -mt-50 z-20">
         <FeatureCards />
       </div>
 
-      <div className="max-w-300 mx-auto px-6 bg-[#F7F9F4]">
+      <div className="max-w-300 mx-auto pt-20 pb-25  bg-[#F7F9F4]">
         {/* Bottom Section */}
         <div className="grid md:grid-cols-2 gap-12 items-start">
           {/* Left Text */}
@@ -18,7 +18,7 @@ export default function AboutSection() {
               ABOUT US
             </p>
 
-            <h2 className="text-[48px] font-bold leading-tight text-[#2C3A04] mb-4">
+            <h2 className="text-[48px] font-semibold leading-tight text-[#2C3A04] mb-4">
               Our journey of compassion and hope
             </h2>
 
@@ -36,7 +36,7 @@ export default function AboutSection() {
 
             <Button
               variant="outline"
-              className="px-8 py-3 w-[143.22px] h-[56px] bg-[#F7F9F1] rounded-xl border-[#1f2b0a] text-[#1f2b0a] text-[18px] hover:bg-[#1f2b0a] hover:text-white  mb-12"
+              className="px-8 py-3 w-[143.22px] h-14 bg-[#F7F9F1] rounded-xl border-[#1f2b0a] text-[#1f2b0a] text-[18px] hover:bg-[#1f2b0a] hover:text-white  mb-12"
             >
               Read More
             </Button>
@@ -45,47 +45,47 @@ export default function AboutSection() {
           </div>
 
           {/* Right Images - Fixed Grid Layout */}
-          <div className="relative grid grid-cols-2 gap-3 h-125">
+          <div className="relative grid grid-cols-2 gap-5 ">
             {/* First Column */}
-            <div className="space-y-3">
-              <div className="rounded-2xl overflow-hidden h-60 pb-6">
+            <div className="space-y-3 gap-8">
+              <div className="rounded-2xl overflow-hidden pb-8">
                 <Image
                   src="/Images/home-0001.jpg"
                   alt=""
                   width={309.66}
                   height={338.67}
-                  className=" w-[309.66px] h-[338.67px] "
+                  className=""
                 />
               </div>
-              <div className="rounded-2xl overflow-hidden h-60">
+              <div className="rounded-2xl overflow-hidden ">
                 <Image
                   src="/Images/home-03.jpg"
                   alt=""
-                  width={280}
-                  height={240}
-                  className="object-cover w-full h-full"
+                  width={309.66}
+                  height={247.72}
+                  className=""
                 />
               </div>
             </div>
 
             {/* Second Column - with offset */}
             <div className="space-y-3 mt-8">
-              <div className="rounded-2xl overflow-hidden h-60">
+              <div className="rounded-2xl overflow-hidden pt-25 pb-8 ">
                 <Image
                   src="/Images/home-02.jpg"
                   alt=""
-                  width={280}
-                  height={240}
-                  className="object-cover w-full h-full"
+                  width={309.66}
+                  height={247.72}
+                  className=""
                 />
               </div>
-              <div className="rounded-2xl overflow-hidden h-60">
+              <div className="rounded-2xl overflow-hidden ">
                 <Image
                   src="/Images/home-0004.jpg"
                   alt=""
-                  width={280}
-                  height={240}
-                  className="object-cover w-full h-full"
+                  width={309.66}
+                  height={338.67}
+                  className=""
                 />
               </div>
             </div>

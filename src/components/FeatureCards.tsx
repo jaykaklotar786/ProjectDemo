@@ -10,10 +10,10 @@ export default function FeatureCards() {
           <h3 className="mb-2 sm:mb-3 text-xl sm:text-2xl lg:text-[24px] font-semibold">
             Causes
           </h3>
-          <p className="pb-4 sm:pb-5 text-sm sm:text-base text-gray-600">
+          <p className="pb-4 sm:pb-5 text-sm sm:text-base text-[#46512A]">
             We support education, healthcare, and poverty reduction.
           </p>
-          <a className="mt-4 inline-block text-base sm:text-lg lg:text-[18px] font-semibold cursor-pointer group">
+          <a className="mt-3 inline-block text-base sm:text-lg lg:text-[18px] font-bold cursor-pointer group">
             <span className="flex items-center gap-1">
               See Proof{' '}
               <span className="group-hover:translate-x-1 transition-transform duration-300">
@@ -31,10 +31,10 @@ export default function FeatureCards() {
           <h3 className="mb-2 sm:mb-3 text-xl sm:text-2xl lg:text-[24px] font-semibold">
             Get involved
           </h3>
-          <p className="pb-4 sm:pb-5 text-sm sm:text-base text-gray-600">
+          <p className="pb-4 sm:pb-5 text-sm sm:text-base text-[#46512A]">
             Volunteer or donate your skills to make a difference.
           </p>
-          <a className="mt-4 inline-block text-base sm:text-lg lg:text-[18px] font-semibold cursor-pointer group">
+          <a className="mt-3 inline-block text-base sm:text-lg lg:text-[18px] font-bold cursor-pointer group">
             <span className="flex items-center gap-1">
               View Financials
               <span className="group-hover:translate-x-1 transition-transform duration-300">
@@ -52,10 +52,10 @@ export default function FeatureCards() {
           <h3 className="mb-2 sm:mb-3 text-xl sm:text-2xl lg:text-[24px] font-semibold">
             Donation
           </h3>
-          <p className="pb-4 sm:pb-5 text-sm sm:text-base text-gray-600">
+          <p className="pb-4 sm:pb-5 text-sm sm:text-base text-[#46512A]">
             Contribute today and help us change lives and build a better future.
           </p>
-          <a className="mt-4 inline-block text-base sm:text-lg lg:text-[18px] font-semibold cursor-pointer group">
+          <a className="mt-3 inline-block text-base sm:text-lg lg:text-[18px] font-bold cursor-pointer group">
             <span className="flex items-center gap-1">
               Learn More
               <span className="group-hover:translate-x-1 transition-transform duration-300">
